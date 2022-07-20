@@ -10,7 +10,10 @@
 <body>
     
     <div id="app">
-        
+        <img :class="gender" :src="picture" :alt="`${first_name} ${last_name}`">
+        <h1>{{first_name}} {{last_name}}</h1>
+        <h3>{{email}}</h3>
+        <button :class="gender" @click="getRandomUser">Random</button>
     </div>
 
     <script src="https://unpkg.com/vue@3"></script>
